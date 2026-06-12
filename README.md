@@ -1,4 +1,4 @@
-# 🌸 MediQuery AI — Medical RAG Chatbot
+#  MediRAG AI — Medical RAG Chatbot
 
 > **Retrieval-Augmented Generation for Medical Document Q&A**  
 > Built with LangChain · FAISS · HuggingFace · Streamlit · Groq/OpenAI
