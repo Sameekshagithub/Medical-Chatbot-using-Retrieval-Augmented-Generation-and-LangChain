@@ -1,0 +1,51 @@
+# ============================================================
+# Medical RAG Chatbot - Dependencies
+# ============================================================
+# Install all: pip install -r requirements.txt
+
+# --- Core LangChain Framework ---
+langchain==0.2.16                  # Main LangChain orchestration framework
+langchain-community==0.2.16        # Community integrations (FAISS, HuggingFace, etc.)
+langchain-core==0.2.38             # Core abstractions and base classes
+langchain-openai==0.1.23           # OpenAI LLM integration for LangChain
+langchain-groq==0.1.9              # Groq ultra-fast LLM integration
+
+# --- LLM Providers ---
+openai==1.45.0                     # OpenAI GPT-4/GPT-3.5 API client
+groq==0.11.0                       # Groq LPU (Language Processing Unit) API client
+
+# --- Embeddings & Vector Search ---
+sentence-transformers==3.1.1       # HuggingFace sentence embedding models (all-MiniLM-L6-v2)
+faiss-cpu==1.8.0                   # Facebook AI Similarity Search - vector database (CPU version)
+chromadb==0.5.5                    # ChromaDB alternative vector database with persistence
+
+# --- Document Processing ---
+pypdf==4.3.1                       # PDF text extraction (PyPDFLoader backend)
+pymupdf==1.24.10                   # Advanced PDF processing with fitz (fallback)
+unstructured==0.15.13              # Parse unstructured documents (PDFs, Word, etc.)
+
+# --- Frontend ---
+streamlit==1.38.0                  # Web UI framework for Python ML apps
+streamlit-chat==0.1.1              # Chat message components for Streamlit
+
+# --- Utilities ---
+python-dotenv==1.0.1               # Load .env environment variables securely
+tiktoken==0.7.0                    # OpenAI tokenizer - count tokens accurately
+transformers==4.44.2               # HuggingFace transformers library (model loading)
+torch==2.4.1                       # PyTorch - backend for HuggingFace embeddings
+huggingface-hub==0.24.7            # Download models from HuggingFace Hub
+
+# --- Database ---
+sqlalchemy==2.0.35                 # SQL toolkit for SQLite chat history storage
+
+# --- Data Processing ---
+pandas==2.2.2                      # Data manipulation for chat history analysis
+numpy==1.26.4                      # Numerical computing (vector operations)
+
+# --- Logging & Configuration ---
+loguru==0.7.2                      # Beautiful, structured logging
+pydantic==2.9.1                    # Data validation and settings management
+pydantic-settings==2.5.2           # Environment-based settings management
+
+# --- Caching ---
+diskcache==5.6.3                   # Disk-based caching for embeddings and responses
